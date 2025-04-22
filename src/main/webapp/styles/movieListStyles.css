@@ -1,0 +1,189 @@
+/* Header */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #007bff; /* Bright color for the site name */
+    margin: 0;
+    font-size: 32px;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #e0e0e0; /* Light text color */
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.auth-link {
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    color: #007bff;
+     text-decoration: none;
+}
+
+.auth-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+        
+.signout-button {
+    background-color: #ff6b6b; /* Light red background */
+    color: #ffffff; /* White text */
+    border: none; /* Remove default button border */
+    padding: 8px 15px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.signout-button:hover {
+    background-color: #c82333; 
+}
+
+.signup-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Movie List */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.movie h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.footer-nav {
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+footer p {
+    font-size: 14px;
+    color: #e0e0e0;
+}

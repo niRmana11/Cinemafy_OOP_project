@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #007bff; /* Bright color for the site name */
+    margin: 0;
+    font-size: 32px;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #e0e0e0; /* Light text color */
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.auth-link {
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    color: #007bff;
+     text-decoration: none;
+}
+
+.auth-buttons form{
+	padding: 0;
+	background: none;
+    margin-bottom: 0;
+}
+
+.auth-buttons .signout-button {
+   background-color: #ff6b6b; /* Light red background */
+    color: #ffffff; /* White text */
+    border: none; /* Remove default button border */
+    padding: 8px 15px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+.auth-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+        
+
+
+.signout-button:hover {
+    background-color: #c82333; 
+}
+
+.signup-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2a2a2a; /* Dark background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top:30px;
+}
+
+main h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* Back Link */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Update Form Section */
+form, #viewReviewSection {
+    background-color: #333; /* Dark form background */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #444; /* Slightly lighter than form background */
+    color: #e0e0e0;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+input[type="submit"].delete-button {
+    background-color: #ff4b5c; /* Red for delete button */
+    margin-left: 10px; /* Space between update and delete buttons */
+}
+
+input[type="submit"].delete-button:hover {
+    background-color: #e74c3c; /* Darker red on hover */
+}
+
+/* Back Link */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.footer-nav {
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+footer p {
+    font-size: 14px;
+    color: #e0e0e0;
+}
